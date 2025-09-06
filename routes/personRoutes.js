@@ -54,7 +54,7 @@ router.put('/:id', async(req, res) => {
     //updated data for the person
     const response = await Person.findByIdAndUpdate(personId, updatedPersonData, {
       new: true,
-      runValidators: true,//Person .js file jo required bala tha usko checj=k karga ki required hai ki nhi;
+      runValidators: true,//Person .js file jo required bala tha usko checjk karga ki required hai ki nhi;
     })
     
     if (!response) {
